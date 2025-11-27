@@ -1,9 +1,9 @@
-package via.pro3.pro_assignment3.Controllers;
+package via.pro_assignment4.Controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import via.pro3.pro_assignment3.Model.Animal;
-import via.pro3.pro_assignment3.Repositories.AnimalRepository;
+import via.pro_assignment4.Model.Animal;
+import via.pro_assignment4.Repositories.AnimalRepository;
 
 import java.time.LocalDate;
 import java.util.List;

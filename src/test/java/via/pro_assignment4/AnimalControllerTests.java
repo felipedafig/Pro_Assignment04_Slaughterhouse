@@ -1,4 +1,4 @@
-package via.pro3.pro_assignment3;
+package via.pro_assignment4;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,8 +8,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import via.pro3.pro_assignment3.Model.Animal;
-import via.pro3.pro_assignment3.Repositories.AnimalRepository;
+import via.pro_assignment4.Model.Animal;
+import via.pro_assignment4.Repositories.AnimalRepository;
 
 import java.time.LocalDate;
 
