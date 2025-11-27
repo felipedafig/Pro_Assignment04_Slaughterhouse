@@ -1,4 +1,4 @@
-package via.pro3.pro_assignment3.Model;
+package via.pro_assignment4.Model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
