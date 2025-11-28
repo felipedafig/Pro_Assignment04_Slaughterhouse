@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+        <relativePath/>
+    </parent>
+    <groupId>via</groupId>
+    <artifactId>pro_assignment4_root</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>pro_assignment4_root</name>
+    <description>Pro Assignment 4 Root</description>
+    <modules>
+        <module>common</module>
+        <module>station1</module>
+        <module>station2</module>
+        <module>station3</module>
+        <module>traceability</module>
+    </modules>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+</project>
