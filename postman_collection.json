@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "slaughterhouse-collection",
+		"name": "Slaughterhouse API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Station 1: Register Animal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"registrationNumber\": \"ANIMAL-001\",\n    \"type\": \"Cow\",\n    \"weight\": 500.5,\n    \"arrivalDate\": \"2023-10-26\",\n    \"origin\": \"Farm A\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:8443/api/animals",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"api",
+						"animals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Station 2: Add Part to Tray",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"animalId\": \"ANIMAL-001\",\n    \"weight\": 50.0,\n    \"partType\": \"Leg\",\n    \"trayId\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/parts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"parts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Station 3: Pack Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"trayId\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traceability: Get All Records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/trace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trace"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

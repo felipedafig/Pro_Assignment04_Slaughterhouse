@@ -6,45 +6,22 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>via</groupId>
-    <artifactId>pro_assignment4</artifactId>
+    <artifactId>pro_assignment4_root</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pro_assignment4</name>
-    <description>Pro Assignment 4</description>
+    <packaging>pom</packaging>
+    <name>pro_assignment4_root</name>
+    <description>Pro Assignment 4 Root</description>
+    <modules>
+        <module>common</module>
+        <module>station1</module>
+        <module>station2</module>
+        <module>station3</module>
+        <module>traceability</module>
+    </modules>
     <properties>
         <java.version>17</java.version>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
